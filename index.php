@@ -14,8 +14,6 @@ $dotenv->load();
  $clientSecret               = $_ENV['CLIENT_SECRET'];      // VATSIM Connect Client Secret
  $scopes                     = $_ENV['SCOPES'];             // VATSIM Connect Scopes
  $redirectURL                = $_ENV['REDIRECT_URL'];       // VATSIM Connect Redirect URL
-
- // Required for Plugin
  $loginDeniedURL             = $_ENV['LOGIN_DENIED'];       // LOCAL Redirect URL Login Denied
  $logoutURL                  = $_ENV['LOGOUT'];             // LOCAL Redirect URL Logout Message
 
