@@ -17,9 +17,9 @@ $dotenv->load();
  $loginDeniedURL             = $_ENV['LOGIN_DENIED'];       // LOCAL Redirect URL Login Denied
  $logoutURL                  = $_ENV['LOGOUT'];             // LOCAL Redirect URL Logout Message
 
- $urlAuthorize               = 'https://auth-dev.vatsim.net/oauth/authorize';        // VATSIM Authorize URL
- $urlAccessToken             = 'https://auth-dev.vatsim.net/oauth/token';            // VATSIM Token URL
- $urlResourceOwnerDetails    = 'https://auth-dev.vatsim.net/api/user';               // VATSIM User Details URL
+ $urlAuthorize               = 'https://auth.vatsim.net/oauth/authorize';        // VATSIM Authorize URL
+ $urlAccessToken             = 'https://auth.vatsim.net/oauth/token';            // VATSIM Token URL
+ $urlResourceOwnerDetails    = 'https://auth.vatsim.net/api/user';               // VATSIM User Details URL
 
 $provider = new \League\OAuth2\Client\Provider\GenericProvider([
     'clientId'                => $clientID,
