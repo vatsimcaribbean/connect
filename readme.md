@@ -5,7 +5,7 @@
 - composer install[^1]
 
 ### Credits
-- [OAuth 2.0 Client by the The League of Extraordinary Packages](http://oauth2-client.thephpleague.com/)
+- [OAuth 2.0 Client by The League of Extraordinary Packages](http://oauth2-client.thephpleague.com/)
 - VATSIM Connect Modifications by Jannes van Gestel and Alex Long
 
 
