@@ -1,4 +1,4 @@
-# OAuth2.0 Authentication for VATSIM Connect in basic PHP
+# OAuth2.0 for VATSIM Connect in basic PHP
 
 ### Installation & Use
 
