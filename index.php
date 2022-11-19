@@ -1,21 +1,19 @@
 <?php
-// Uncomment to see errors
+// Uncomment the three lines below to see errors
+
 // ini_set('display_errors', 1);
 // ini_set('display_startup_errors', 1);
 // error_reporting(E_ALL);
 
-require 'vendor/autoload.php';
 
-$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
-$dotenv->load();
+ // Required data for VATSIM Connect
 
- // Required for VATSIM Connect
- $clientID                   = $_ENV['CLIENT_ID'];          // VATSIM Connect Client ID
- $clientSecret               = $_ENV['CLIENT_SECRET'];      // VATSIM Connect Client Secret
- $scopes                     = $_ENV['SCOPES'];             // VATSIM Connect Scopes
- $redirectURL                = $_ENV['REDIRECT_URL'];       // VATSIM Connect Redirect URL
- $loginDeniedURL             = $_ENV['LOGIN_DENIED'];       // LOCAL Redirect URL Login Denied
- $logoutURL                  = $_ENV['LOGOUT'];             // LOCAL Redirect URL Logout Message
+ $clientID                   = '';          // VATSIM Connect Client ID
+ $clientSecret               = '';          // VATSIM Connect Client Secret
+ $scopes                     = '';          // VATSIM Connect Scopes
+ $redirectURL                = '';          // VATSIM Connect Redirect URL
+ $loginDeniedURL             = '';          // LOCAL Redirect URL Login Denied
+ $logoutURL                  = '';          // LOCAL Redirect URL Logout Message
 
  $urlAuthorize               = 'https://auth.vatsim.net/oauth/authorize';        // VATSIM Authorize URL
  $urlAccessToken             = 'https://auth.vatsim.net/oauth/token';            // VATSIM Token URL
