@@ -8,7 +8,13 @@ To utilize Connect, you will need to go to https://auth.vatsim.net/ and create y
 #### 2. Create your site, set redirect URL and IP
 Once your organization has been created and approved, you will then view the organization and select OAuth. You will create a New Site. The redirect URL will be the URL where the index file is located. This URL will also be the exact URL you put into the $redirectURL variable. You will also need to define the IP address of the server.
 
-#### 3. Set your variables
+#### 3. Install Dependencies via Composer
+Run composer install from your Command Prompt or Terminal.
+```
+composer install
+```
+
+#### 4. Set your variables
 You will place your Client ID and Client Secret variables from the OAuth Clients page into your variables. 
 Next, you will input your scopes, or, what data you'd like returned to you. Commonly, the following scopes are used: 
 ```
@@ -16,7 +22,7 @@ full_name email vatsim_details country
 ```
 Finally, you will input your redirect URL, login denied URL, and logout URLs.
 
-#### 4. Use of data
+#### 5. Use of data
 At the very bottom of the file, you will find the various data variables defined. Below these, you will find an area between the comment lines to input your code for use of the data captured.
 
 #### Dev Environment
